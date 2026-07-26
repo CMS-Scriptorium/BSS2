@@ -29,14 +29,23 @@ $order = new order(
     'section_id'
 );
 
-$aInsert = array( 
+$aInsert = [ 
     'section_id'   => $section_id,
     'page_id'      => $page_id,
     'active'       => 1,
     'created_when' => time(),
     'created_by'   => $admin->get_user_id(),
     'position'     => $order->get_new($section_id),
-);
+    'title'         => "",  // Empty string to avoid NULL insert! Likewise, the following.
+    'sku'           => "",
+    'stock'         => "",
+    'definable_field_0' => "",
+    'definable_field_1' => "",
+    'definable_field_2' => "",
+    'link'              => "",
+    'description'       => "",
+    'full_desc'         => ""
+];
 // Insert new row into database
 $database->insertRow("{BXT}_items", $aInsert);
 

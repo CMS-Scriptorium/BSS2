@@ -31,8 +31,8 @@ Copyleft 2021- Christian M. Stefan, Florian Meerwinck
 $module_directory   = 'bakery';
 $module_name        = 'Bakery';
 $module_function    = 'page,preinit';
-$module_version     = '2.0.26';
-$module_platform    = '1.0.0';
+$module_version     = '2.1.0'; // alpha! 
+$module_platform    = '1.6.8';
 $module_author      = 'Christoph Marti, Florian Meerwinck, Christian M. Stefan';
 $module_license     = 'GNU General Public License';
 $module_description = 'Bakery is a WBCE CMS shop module with catalog, cart, stock administration, order administration and invoice/delivery note/reminder printing feature. Payment in advance, invoice, cash on delivery and/or different payment gateways. Further information can be found on the <a href="http://www.bakery-shop.ch" target="_blank">Bakery Website</a>.';
