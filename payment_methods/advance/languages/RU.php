@@ -1,0 +1,92 @@
+<?php
+
+/*
+  Module developed for the Open Source Content Management System WebsiteBaker (http://websitebaker.org)
+  Copyright (C) 2007 - 2016, Christoph Marti
+
+  Author translation: Klimentiy Ranchukov.
+  E-mail: strag@bk.ru
+  
+  LICENCE TERMS:
+  This module is free software. You can redistribute it and/or modify it 
+  under the terms of the GNU General Public License - version 2 or later, 
+  as published by the Free Software Foundation: http://www.gnu.org/licenses/gpl.html.
+
+  DISCLAIMER:
+  This module is distributed in the hope that it will be useful, 
+  but WITHOUT ANY WARRANTY; without even the implied warranty of 
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+  GNU General Public License for more details.
+*/
+
+
+// PAYMENT METHOD ADVANCE PAYMENT
+// ******************************
+
+// SETTINGS - USED BY BACKEND
+$TXT_BAKERY[$payment_method]['NAME'] = 'Предоплата';
+
+// USED BY FILE bakery/payment_methods/advance/gateway.php
+$TXT_BAKERY[$payment_method]['TITLE'] = 'Предоплата';
+$TXT_BAKERY[$payment_method]['ACCOUNT'] = 'Пожалуйста оплатите заказанные товары на наш расчетный счет или карточку.';
+$TXT_BAKERY[$payment_method]['PAY'] = 'Я оплачу сейчас';
+
+// USED BY FILE bakery/checkout_confirmation.php
+$TXT_BAKERY[$payment_method]['SUCCESS'] = 'Мы вышлем вам подтверждение заказа с информацией об оплате.';
+$TXT_BAKERY[$payment_method]['SHIPMENT'] = 'Как только мы получим оплату, мы отправим Вам заказанные товары.';
+
+// EMAIL CUSTOMER
+$TXT_BAKERY[$payment_method]['EMAIL_SUBJECT_CUSTOMER'] = 'Подтверждение и счет на оплату Вашего заказа на [SHOP_NAME]';
+$TXT_BAKERY[$payment_method]['EMAIL_BODY_CUSTOMER'] = 'Уважаемые [CUSTOMER_NAME]
+
+Благодарим Вас за покупки в [SHOP_NAME].
+Ниже Вы найдете информацию о товарах которые Вы заказали:
+[ITEM_LIST]
+
+Пожалуйста оплатите заказанные товары на наш расчетный счет или карточку.
+[BANK_ACCOUNT]
+
+Как только мы получим оплату, мы отправим Вам заказанные товары:
+
+[ADDRESS]
+
+
+Спасибо за доверие.
+
+С уважением,
+[SHOP_NAME]
+
+
+';
+
+// EMAIL SHOP
+$TXT_BAKERY[$payment_method]['EMAIL_SUBJECT_SHOP'] = 'Новый заказ на [SHOP_NAME]';
+$TXT_BAKERY[$payment_method]['EMAIL_BODY_SHOP'] = 'Дорогие [SHOP_NAME] Администратор
+
+НОВЫЙ ЗАКАЗ НА [SHOP_NAME]:
+	Заказ #: [ORDER_ID]
+	Способ оплаты: предоплата
+
+Адрес доставки:
+[ADDRESS]
+
+Адрес выставления счета:
+[CUST_ADDRESS]
+
+Список заказанных товаров:
+[ITEM_LIST]
+
+
+Сообщение покупателя:
+[CUST_MSG]
+
+
+С уважением,
+[SHOP_NAME]
+
+
+';
+
+
+
+
