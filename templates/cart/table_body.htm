@@ -1,0 +1,37 @@
+<div class="grid no-gutters mod_bakery_row mod_bakery_cart_row">
+	<div class="unit half">
+		<div class="grid">
+			<div class="unit one-third hide-on-mobiles">
+				<a href="{LINK}"><img src="{THUMB_URL}" alt="{NAME}" width="{THUMB_WIDTH}" height="{THUMB_HEIGHT}" border="0" /></a>
+				<br/>{SKU}
+			</div>
+			<div class="unit two-thirds">
+				<span class="mod_bakery_cart_item_f"><a href="{LINK}">{NAME}</a></span><br />{ATTRIBUTE}
+			</div>
+		</div>
+	</div>
+	<div class="unit half">
+		<div class="unit one-third">
+			<input type="text" name="quantity[{ITEM_ID}][{ATTRIBUTES}]" value="{QUANTITY}" id="id_{ITEM_ID}_{ATTRIBUTES}" style="text-align: right" size="4" />
+		<a href="#" onclick="javascript: mod_bakery_delete_item_f('{ITEM_ID}_{ATTRIBUTES}');"> <img src="{WB_URL}/modules/bakery/images/delete.gif" alt="{TEXT_DELETE}" title="{TEXT_DELETE}" /></a>
+		</div>
+		<div class="unit two-thirds">
+			<div class="grid hide-on-mobiles">
+				<div class="unit one-third">
+					{PRICE}
+				</div>
+				<div class="unit one-third">
+					<span style="display: {DISPLAY_SHIPPING}">{SHIPPING}</span> &nbsp;
+				</div>
+				<div class="unit one-third align-right">
+					{TOTAL}
+				</div>
+			</div>	
+			<div class="grid only-on-mobiles">
+				<div class="unit whole">
+					{PRICE} <span style="display: {DISPLAY_SHIPPING}">/{SHIPPING}</span> / {TOTAL} 
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>

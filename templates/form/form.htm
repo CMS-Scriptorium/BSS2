@@ -1,0 +1,108 @@
+<!-- BEGIN main_block -->
+
+<!-- BEGIN cust_country_block -->
+<div class="grid">
+	<div class="unit one-third mod_bakery_form_label_f">{TXT_CUST_COUNTRY}</div>
+	<div class="unit two-thirds">
+		<select name="cust_country" class="mod_bakery_form_input_f" onchange="javascript: mod_bakery_toggle_state_f('{SELECT_SHOP_COUNTRY}', 'cust', 1);">{COUNTRY_OPTIONS}
+		</select>
+	</div>
+</div>
+<!-- END cust_country_block -->
+
+<!-- BEGIN cust_state_block -->
+<div class="grid" id="cust_state_select" style="display: none;">
+	<div class="unit one-third mod_bakery_form_label_f">{TXT_CUST_STATE}</div>
+	<div class="unit two-thirds">
+		<select name="cust_state" class="mod_bakery_form_input_f" onchange="javascript: mod_bakery_synchro_cust_state_f()">{STATE_OPTIONS}
+		</select>
+	</div>
+</div>
+<!-- END cust_state_block -->
+
+<!-- BEGIN cust_textfields_block -->
+<div class="grid" id="{TR_ID}">
+	<div class="unit one-third mod_bakery_form_label_f">{LABEL}</div>
+	<div class="unit two-thirds"><input type="text" class="{CSS_ERROR_CLASS}mod_bakery_form_input_f" name="{NAME}" value="{VALUE}" maxlength="{MAXLENGTH}" /></div>
+</div>
+<!-- END cust_textfields_block -->
+
+<!-- BEGIN cust_button_block -->
+<div class="grid">
+	<div class="unit whole align-right">		
+			<input type="submit" name="save_form" class="mod_bakery_bt_order_f" value="{TXT_SELECT_PAYMENT_METHOD}" />		
+	</div>
+</div>
+<!-- END cust_button_block -->
+
+<!-- BEGIN cust_buttons_block -->
+<div class="grid">
+	<div class="unit half">
+		<input type="submit" name="add_ship_form" class="mod_bakery_bt_add_ship_form_f" value="{TXT_ADD_SHIP_FORM}" />
+	</div>
+	<div class="unit half align-right">
+		<input type="submit" name="save_form" class="mod_bakery_bt_order_f" value="{TXT_SELECT_PAYMENT_METHOD}" />	
+	</div>
+</div>
+<!-- END cust_buttons_block -->
+
+<!-- BEGIN ship_title_block -->
+<div class="grid">
+	<div class="unit whole">
+		<p class="mod_bakery_form_p_f">{TXT_FILL_IN_SHIP_ADDRESS}:</p>
+	</div>
+</div>
+<!-- END ship_title_block -->
+
+<!-- BEGIN ship_country_block -->
+<div class="grid">
+	<div class="unit one-third mod_bakery_form_label_f">{TXT_CUST_COUNTRY}</div>
+	<div class="unit two-thirds">
+		<select name="ship_country" class="mod_bakery_form_input_f" onchange="javascript: mod_bakery_toggle_state_f('{SELECT_SHOP_COUNTRY}', 'ship', 1);">{COUNTRY_OPTIONS}
+		</select>
+	</div>
+</div>
+<!-- END ship_country_block -->
+
+<!-- BEGIN ship_state_block -->
+<div class="grid" id="ship_state_select" style="display: none;">
+	<div class="unit one-third mod_bakery_form_label_f">{TXT_CUST_STATE}</div>
+	<div class="unit two-thirds">
+		<select name="ship_state" class="mod_bakery_form_input_f" onchange="javascript: mod_bakery_synchro_ship_state_f()">{STATE_OPTIONS}
+		</select>
+	</div>
+</div>
+<!-- END ship_state_block -->
+
+<!-- BEGIN ship_textfields_block -->
+<div class="grid" id="{TR_ID}">
+	<div class="unit one-third mod_bakery_form_label_f">{LABEL}</div>
+	<div class="unit two-thirds">
+		<input type="text" class="{CSS_ERROR_CLASS}mod_bakery_form_input_f" name="{NAME}" value="{VALUE}" maxlength="{MAXLENGTH}" />
+	</div>
+</div>
+<!-- END ship_textfields_block -->
+
+<!-- BEGIN ship_buttons_block -->
+<div class="grid">
+	<div class="unit half">
+			<input type="submit" name="hide_ship_form" class="mod_bakery_bt_add_ship_form_f" value="{TXT_HIDE_SHIP_FORM}" />
+	</div>
+	<div class="unit half align-right">		
+			<input type="submit" name="save_form" class="mod_bakery_bt_order_f" value="{TXT_SELECT_PAYMENT_METHOD}" />		
+	</div>
+</div>
+<!-- END ship_buttons_block -->
+
+<!-- BEGIN ship_button_block -->
+<div class="grid">
+	<div class="unit whole align-right">		
+			<input type="submit" name="save_form" class="mod_bakery_bt_order_f" value="{TXT_SELECT_PAYMENT_METHOD}" />		
+	</div>
+</div>
+
+<!-- END ship_button_block -->
+
+
+</form>
+<!-- END main_block -->

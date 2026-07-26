@@ -1,0 +1,39 @@
+
+	
+<div class="grid no-gutters mod_bakery_row mod_bakery_cart_row">
+	<div class="unit half">
+		<div class="grid">
+			<div class="unit one-third hide-on-mobiles">
+				{SKU}
+			</div>
+			<div class="unit two-thirds">
+				<span class="mod_bakery_cart_item_f">{NAME}</span><br />{ATTRIBUTE}<br />
+				<span class="mod_bakery_cart_item_desc_f" title="{DESCRIPTION}">{DESCRIPTION}</span>
+			</div>
+		</div>
+	</div>
+	<div class="unit half">
+		<div class="unit one-third">
+			{QUANTITY}
+		</div>
+		<div class="unit two-thirds">
+			<div class="grid hide-on-mobiles">
+				<div class="unit one-third">
+					{PRICE}
+				</div>
+				<div class="unit one-third">
+					<span style="display: {DISPLAY_SHIPPING}">{SHIPPING}</span> &nbsp;
+				</div>
+				<div class="unit one-third align-right">
+					{TOTAL}
+				</div>
+			</div>	
+			<div class="grid only-on-mobiles">
+				<div class="unit whole">
+					{PRICE} <span style="display: {DISPLAY_SHIPPING}">/{SHIPPING}</span> / {TOTAL} 
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>
+	

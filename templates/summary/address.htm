@@ -1,0 +1,41 @@
+
+<h2 class="mod_bakery_h_f">
+	<img src="{WB_URL}/modules/bakery/images/checkout_steps/step_3.png" alt="{TXT_ORDER_SUMMARY}" />
+	{TXT_ORDER_SUMMARY}
+</h2>
+<p class="mod_bakery_ordernum_f">{TXT_ORDER_ID}: {ORDER_ID}</p>
+
+<div class="grid">
+	<div class="unit one-third">
+		<span class="mod_bakery_address_h_f">{TXT_ADDRESS}</span>
+	</div>
+	<div class="unit two-thirds">
+		<span class="mod_bakery_address_p_f">{CUST_ADDRESS}</span>
+	</div>
+</div>
+
+<div class="grid">
+	<div class="unit one-third">
+		<span class="mod_bakery_address_h_f">{TXT_SHIP_ADDRESS}</span>
+	</div>
+	<div class="unit two-thirds">
+		<span class="mod_bakery_address_p_f">{SHIP_ADDRESS}</span>
+	</div>
+</div>
+
+<div class="grid" style="display: {DISPLAY_TAX_NO}">
+	<div class="unit one-third">
+		<span class="mod_bakery_tax_no_h_f">{TXT_CUST_TAX_NO}</span>
+	</div>
+	<div class="unit two-thirds">
+		<span class="mod_bakery_tax_no_p_f">{CUST_TAX_NO}</span>
+	</div>
+</div>
+<div class="grid">
+	<div class="unit whole align-right">
+		<form action="{SETTING_CONTINUE_URL}" method="post">
+			<input type="submit" name="modify_address" class="mod_bakery_bt_modify_address_f" value="{TXT_MODIFY_ADDRESS}" />
+		</form>
+	</div>
+</div>
+<hr />
