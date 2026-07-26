@@ -120,7 +120,7 @@ if ($query_item->numRows() > 0) {
 				$previous = $query_previous->fetchRow();
 				// Truncate text and add horizontal ellipsis
 				if (strlen($previous['title']) > $link_length) {
-					$previous['title'] = substr($previous['title'], 0, $link_length).'…';
+					$previous['title'] = mb_substr($previous['title'], 0, $link_length).'…';
 				}
 				$previous_link = '<a href="'.WB_URL.PAGES_DIRECTORY.$previous['link'].PAGE_EXTENSION.'">&laquo; '.lazyspecial(lazystrip($previous['title'])).'</a>';
 			}
@@ -131,7 +131,7 @@ if ($query_item->numRows() > 0) {
 			$next = $query_next->fetchRow();
 			// Truncate text and add horizontal ellipsis
 			if (strlen($next['title']) > $link_length) {
-				$next['title'] = substr($next['title'], 0, $link_length).'…';
+				$next['title'] = mb_substr($next['title'], 0, $link_length).'…';
 			}
 			$next_link = '<a href="'.WB_URL.PAGES_DIRECTORY.$next['link'].PAGE_EXTENSION.'">'.lazyspecial(lazystrip($next['title'])).' &raquo;</a>';
 		}
