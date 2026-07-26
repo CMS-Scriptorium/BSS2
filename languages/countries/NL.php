@@ -1,0 +1,269 @@
+﻿<?php
+
+/*
+  Module developed for the Open Source Content Management System WebsiteBaker (http://websitebaker.org)
+  Copyright (C) 2007 - 2017, Christoph Marti
+
+  LICENCE TERMS:
+  This module is free software. You can redistribute it and/or modify it 
+  under the terms of the GNU General Public License - version 2 or later, 
+  as published by the Free Software Foundation: http://www.gnu.org/licenses/gpl.html.
+
+  DISCLAIMER:
+  This module is distributed in the hope that it will be useful, 
+  but WITHOUT ANY WARRANTY; without even the implied warranty of 
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+  GNU General Public License for more details.
+*/
+
+
+// COUNTRY CODES AND COUNTRIES
+// ***************************
+
+// NL Nederlands
+
+// Modify the country list to fit your needs by deleting lines or changing the lines order.
+// Keep in mind that country codes and country names must correspond 
+// and keep intact the two [1] on the first line.
+
+$TXT_BAKERY['COUNTRY_CODE'][1] = 'DZ'; $TXT_BAKERY['COUNTRY_NAME'][1] = 'Algeria';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AF'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Afghanistan';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AL'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Albanië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'DZ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Algerije';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AS'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Amerikaans-Samoa';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'VI'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Amerikaanse Maagdeneilanden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AD'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Andorra';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Angola';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AI'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Anguilla';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AQ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Antarctica';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Antigua en Barbuda';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Argentinië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Armenië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AW'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Aruba';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AU'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Australië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AZ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Azerbeidzjan';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BS'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Bahamas';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BH'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Bahrein';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BD'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Bangladesh';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BB'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Barbad os';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'België';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BZ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Belize';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BJ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Benin';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Bermuda';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BT'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Bhutan';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Bolivia';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Bosnië-Herzegovina';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BW'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Botswana';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BV'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Bouvet';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Brazilië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'VG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Britse Maagdeneilanden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'IO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Brits IO Territorium';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Brunei';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Bulgarije';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BF'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Burkina Faso';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BI'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Burundi';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'KH'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Cambodja';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Canada';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CF'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Centraal-Afrikaanse Republiek';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CL'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Chili';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'China';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CX'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Christmaseiland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CC'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Cocoseilanden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Colombia';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'KM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Comoren';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Congo-Brazzaville';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CD'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Congo-Kinshasa';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CK'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Cookeilanden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Costa Rica';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CU'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Cuba';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CY'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Cyprus';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'DK'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Denemarken';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'DJ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Djibouti';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'DM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Dominica';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'DO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Dominicaanse Republiek';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'DE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Duitsland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'EC'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Ecuador';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'EG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Egypte';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SV'; $TXT_BAKERY['COUNTRY_NAME'][] = 'El Salvador';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GQ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Equatoriaal-Guinea';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'ER'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Eritrea';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'EE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Estland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'ET'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Ethiopië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'FK'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Falklandeilanden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'FO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Faeröer';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'FJ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Fiji';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PH'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Filipijnen';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'FI'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Finland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'FR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Frankrijk';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GF'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Frans-Guyana';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PF'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Frans-Polynesië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TF'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Franse Zuidelijke Gebieden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Gabon';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Gambia';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Georgië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GH'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Ghana';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GI'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Gibraltar';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Griekenland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GL'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Groenland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GD'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Grenada';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GP'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Guadeloupe';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GU'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Guam';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GT'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Guatemala';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Guinee';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GW'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Guinee-Bissau';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GY'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Guyana';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'HT'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Haïti';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'HM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Heard- en McDonaldeilanden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'HN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Honduras';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'HK'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Hongkong';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'HU'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Hongarije';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'IS'; $TXT_BAKERY['COUNTRY_NAME'][] = 'IJsland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'IN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'India';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'ID'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Indonesië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'IR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Iran';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'IQ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Irak';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'IE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Ierland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'IM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Isle of';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'IL'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Israël';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'IT'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Italië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CI'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Ivoorkust';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'JM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Jamaica';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'JP'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Japan';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'YE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Jemen';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'JO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Jordanië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CV'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Kaapverdië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'KY'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Caymaneilanden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Kameroen';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'KZ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Kazachstan';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'KE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Kenia';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'KI'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Kiribati';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'HR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Kroatië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'KP'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Noord-Korea';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'KW'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Koeweit';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'KG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Kirgizië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'LA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Laos';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'LV'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Letland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'LB'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Libanon';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'LS'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Lesotho';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'LR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Liberia';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'LY'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Libië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'LI'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Liechtenstein';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'LT'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Litouwen';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'LU'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Luxemburg';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Macao';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MK'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Macedonië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Madagaskar';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MW'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Malawi';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MY'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Maleisië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MV'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Maldiven';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'ML'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Mali';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MT'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Malta';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MH'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Marshalleilanden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MQ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Martinique';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Mauritanië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MU'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Mauritius';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'YT'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Mayotte';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MX'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Mexico';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'FM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Micronesia';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MD'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Moldavië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MC'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Monaco';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Mongolië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MS'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Montserrat';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Marokko';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MZ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Mozambique';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Myanmar';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Namibië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Nauru';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NP'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Nepal';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NL'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Nederland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Nederlandse Antillen';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NC'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Nieuw-Caledonië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NZ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Nieuw-Zeeland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NI'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Nicaragua';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Niger';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Nigeria';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NU'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Niue';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NF'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Norfolkeiland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'MP'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Noordelijke Marianen';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'NO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Noorwegen';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'OM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Oman';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'UG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Oeganda';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'UA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Oekraïne';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'UZ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Oezbekistan';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AT'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Oostenrijk';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TL'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Oost-Timor';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PK'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Pakistan';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PW'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Palau';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PS'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Palestina';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Panama';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Papoea-Nieuw-Guinea';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PY'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Paraguay';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Peru';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Pitcairn';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PL'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Polen';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PT'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Portugal';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Puerto Rico';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'QA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Qatar';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'RE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Réunion';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'RO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Roemenië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'RU'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Rusland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'RW'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Rwanda';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'EH'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Sahara';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'KN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Saint Kitts en Nevis';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'LC'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Saint Lucia';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'PM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Saint-Pierre en Miquelon';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'VC'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Saint Vincent en de Grenadines';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'WS'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Samoa';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GS'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Sandwich Eilanden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'San Marino';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'ST'; $TXT_BAKERY['COUNTRY_NAME'][] = 'São Tomé en Principe';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Saoedi-Arabië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Senegal';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CS'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Servië en Montenegro';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SC'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Seychellen';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SL'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Sierra Leone';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Singapore';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SH'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Sint Helena';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SK'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Slowakije';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SI'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Slovenië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SB'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Solomon Eilanden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Somalië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'ES'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Spanje';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'LK'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Sri Lanka';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SD'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Soedan';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Suriname';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SJ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Svalbard en Jan Mayen';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SZ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Swaziland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SY'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Syrië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TJ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Tadzjikistan';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TW'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Taiwan';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TZ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Tanzania';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TH'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Thailand';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TG'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Togo';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TK'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Tokelau';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TO'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Tonga';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TT'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Trinidad en Tobago';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TD'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Tsjaad';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CZ'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Tsjechië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Tunesië';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Turkije';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Turkmenistan';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TC'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Turks en Caicos eilanden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'TV'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Tuvalu';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'AE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Verenigde Arabische Emiraten';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'GB'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Verenigd Koninkrijk';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'US'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Verenigde Staten';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'UM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Kleine Pacifische eilanden VS';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'UY'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Uruguay';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'VU'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Vanuatu';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'VA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Vaticaanstad';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'VE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Venezuela';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'VN'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Vietnam';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'WF'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Wallis en Futuna';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'BY'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Wit-Rusland';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'ZM'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Zambia';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'ZW'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Zimbabwe';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'ZA'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Zuid-Afrika';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'KR'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Zuid-Korea';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'SE'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Zweden';
+$TXT_BAKERY['COUNTRY_CODE'][] = 'CH'; $TXT_BAKERY['COUNTRY_NAME'][] = 'Zwitserland';
