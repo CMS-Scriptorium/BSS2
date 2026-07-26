@@ -7,24 +7,24 @@ CREATE TABLE IF NOT EXISTS `{BXT}_items` (
     `group_id`            INT(11) NOT NULL DEFAULT '0',
     `active`              INT(11) NOT NULL DEFAULT '0',
     `position`            INT(11) NOT NULL DEFAULT '0',
-    `title`               VARCHAR(255) NULL DEFAULT NULL,
-    `sku`                 VARCHAR(20) NULL DEFAULT NULL,
-    `stock`               VARCHAR(20) NULL DEFAULT NULL,
+    `title`               VARCHAR(255) NULL DEFAULT '',
+    `sku`                 VARCHAR(20) NULL DEFAULT '',
+    `stock`               VARCHAR(20) NULL DEFAULT '',
     `price`               DECIMAL(9,2) NOT NULL DEFAULT '0.00',
     `shipping`            DECIMAL(9,2) NOT NULL DEFAULT '0.00',
     `tax_rate`            DECIMAL(5,2) NOT NULL DEFAULT '0.00',
-    `definable_field_0`   VARCHAR(150) NULL DEFAULT NULL,
-    `definable_field_1`   VARCHAR(150) NULL DEFAULT NULL,
-    `definable_field_2`   VARCHAR(150) NULL DEFAULT NULL,
-    `link`                TEXT NULL DEFAULT NULL,
-    `description`         TEXT NULL DEFAULT NULL,
-    `full_desc`           TEXT NULL DEFAULT NULL,
+    `definable_field_0`   VARCHAR(150) NULL DEFAULT '',
+    `definable_field_1`   VARCHAR(150) NULL DEFAULT '',
+    `definable_field_2`   VARCHAR(150) NULL DEFAULT '',
+    `link`                TEXT NULL DEFAULT '',
+    `description`         TEXT NULL DEFAULT '',
+    `full_desc`           TEXT NULL DEFAULT '',
     `modified_when`       INT(11) NOT NULL DEFAULT '0',
     `modified_by`         INT(11) NOT NULL DEFAULT '0',
     `created_when`        INT(11) NOT NULL DEFAULT '0',
     `created_by`          INT(11) NOT NULL DEFAULT '0',
-    `seo_title`           VARCHAR(255) NULL DEFAULT NULL,  /* NEW since vers. 2.0.0 */
-    `seo_description`     VARCHAR(255) NULL DEFAULT NULL,  /* NEW since vers. 2.0.0 */
+    `seo_title`           VARCHAR(255) NULL DEFAULT '',  /* NEW since vers. 2.0.0 */
+    `seo_description`     VARCHAR(255) NULL DEFAULT '',  /* NEW since vers. 2.0.0 */
     PRIMARY KEY (`item_id`)
 ) {TABLE_ENGINE};
 
@@ -35,21 +35,21 @@ CREATE TABLE IF NOT EXISTS `{BXT}_images` (
     `filename`            VARCHAR(150) NOT NULL DEFAULT '',
     `active`              ENUM('1','0') NOT NULL DEFAULT '1',
     `position`            INT(11)   NOT NULL DEFAULT '0',
-    `alt`                 VARCHAR(255)   NULL DEFAULT NULL,
-    `title`               VARCHAR(255) NULL DEFAULT NULL,
-    `caption`             TEXT NULL DEFAULT NULL,  
+    `alt`                 VARCHAR(255)   NULL DEFAULT '',
+    `title`               VARCHAR(255) NULL DEFAULT '',
+    `caption`             TEXT NULL DEFAULT '',  
     PRIMARY KEY (`img_id`)
 ) {TABLE_ENGINE};
 
 CREATE TABLE IF NOT EXISTS `{BXT}_options` (
     `option_id`           INT(6) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `option_name`         VARCHAR(64) NOT NULL
+    `option_name`         VARCHAR(64) NOT NULL DEFAULT ''
 ) {TABLE_ENGINE};
 
 CREATE TABLE IF NOT EXISTS `{BXT}_attributes` (
     `attribute_id`        INT(6) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    `option_id`           INT(6) NOT NULL,
-    `attribute_name`      VARCHAR(64) NOT NULL
+    `option_id`           INT(6) NOT NULL DEFAULT 0,
+    `attribute_name`      VARCHAR(64) NOT NULL DEFAULT ''
 ) {TABLE_ENGINE};
 
 CREATE TABLE IF NOT EXISTS `{BXT}_item_attributes` (
