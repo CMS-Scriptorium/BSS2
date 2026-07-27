@@ -27,10 +27,10 @@ function make_thumb_png($source, $destination, $size) {
 		list($original_x, $original_y) = getimagesize($source);
 		if ($original_x > $original_y) {
 			$thumb_w = $size;
-			$thumb_h = $original_y * ($size / $original_x);
+			$thumb_h = intval($original_y * ($size / $original_x));
 		}
 		if ($original_x < $original_y) {
-			$thumb_w = $original_x * ($size / $original_y);
+			$thumb_w = intval($original_x * ($size / $original_y));
 			$thumb_h = $size;
 		}
 		if ($original_x == $original_y) {
