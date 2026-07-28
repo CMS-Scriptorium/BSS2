@@ -3,11 +3,10 @@
 declare(strict_types=1);
 
 /**
- * @package         Subway
- * @version         0.1.0
- * @authors         Kant (Aldus)
- * @license         CC BY-SA 4.0
- * @license_terms   https://creativecommons.org/licenses/by-sa/4.0/
+ * @package         Bakery
+ * @version         2.1.0
+ * @authors         Christoph Marti, Florian Meerwinck, Christian M. Stefan, Dietrich R. Pehlke
+ * @license         GNU General Public License
  * @platform        WBCE 1.6.x
  * @requirements    PHP 8.4.x (8.3 recommented)
  */
