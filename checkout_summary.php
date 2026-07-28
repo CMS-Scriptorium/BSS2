@@ -169,12 +169,12 @@ while ($row1 = $sql_result1->fetchRow()) {
             $query_attributes = $database->query("SELECT o.option_name, a.attribute_name, ia.price, ia.operator FROM {BXT}_options o INNER JOIN {BXT}_attributes a ON o.option_id = a.option_id INNER JOIN {BXT}_item_attributes ia ON a.attribute_id = ia.attribute_id WHERE ia.item_id = {$items[$i]['item_id']} AND ia.attribute_id = $attribute_id");
             $attribute = $query_attributes->fetchRow();
             // Calculate the item attribute prices sum depending on the operator
-            if ($attribute['operator'] == '+') {
+            if (($attribute['operator'] ?? '') == '+') {
                 $items[$i]['attribute_price'] = $items[$i]['attribute_price'] + $attribute['price'];
-            } elseif ($attribute['operator'] == '-') {
+            } elseif (($attribute['operator'] ?? '') == '-') {
                 $items[$i]['attribute_price'] = $items[$i]['attribute_price'] - $attribute['price'];
             // If operator is '=' then override the item price by the attribute price
-            } elseif ($attribute['operator'] == '=') {
+            } elseif (($attribute['operator'] ?? '') == '=') {
                 $items[$i]['price'] = $attribute['price'];
             }
             // Prepare option and attributes for display in cart table
