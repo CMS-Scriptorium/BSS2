@@ -68,7 +68,7 @@ class Image
      *
      * @return  bool
      */
-    public function make_thumb(string $source, string $destination, int $size): bool
+    public function make_thumb(string $source, string $destination, int $size, int $quality = 90): bool
     {
         // Check if GD is installed
         if (extension_loaded('gd'))
@@ -142,6 +142,11 @@ class Image
             }
 
             $dst_img = ImageCreateTrueColor($thumb_w, $thumb_h);
+            
+            // Allow png transparency (full alpha channel information)
+            imagealphablending($dst_img, false);
+            imagesavealpha($dst_img, true);
+            
             imagecopyresampled($dst_img, $source_img, 0, 0, 0, 0, $thumb_w, $thumb_h, $original_x, $original_y);
 
             $destinationImageType = $this->getFileTypeByPath($destination);
@@ -150,7 +155,7 @@ class Image
             {
                 case 'jpg':
                 case 'jpeg':
-                    $fileWritten = $this->bWriteJPG ? imagejpeg($dst_img, $destination, 90): null; // between 0 and 100
+                    $fileWritten = $this->bWriteJPG ? imagejpeg($dst_img, $destination, $quality): null; // between 0 and 100
                     break;
 
                 case 'png':
@@ -162,7 +167,7 @@ class Image
                     break;
 
                 case 'webp':
-                    $fileWritten = $this->bWriteWEBP ? imagewebp($dst_img, $destination, 90): null; // between 0 and 100
+                    $fileWritten = $this->bWriteWEBP ? imagewebp($dst_img, $destination, $quality): null; // between 0 and 100
                     break;
 
                 case 'wbmp':
@@ -195,5 +200,31 @@ class Image
     {
         $destinationPathTerms = explode(".", $destinationPath);
         return strtolower(array_pop($destinationPathTerms) ?? "none");
+    }
+
+    public function resize(string $source, int $new_max_w, int $new_max_h, $quality = 75): bool
+    {
+        // h und w neu auf w berechnen!
+        list($orig_w, $orig_h) = getimagesize($source);
+        if ($orig_w > $new_max_w)
+        {
+            $new_w = $new_max_w;
+            $new_h = intval($orig_h * ($new_w / $orig_w));
+            if ($new_h > $new_max_h)
+            {
+                $new_h = $new_max_h;
+                $new_w = intval($orig_w * ($new_h / $orig_h));
+            }
+        } else if ($orig_h > $new_max_h)
+        {
+            $new_h = $new_max_h;
+            $new_w = intval($orig_w * ($new_h / $orig_h));
+        } else
+        {
+            // Image cant be downsized
+            echo "<div align='center'><p style='color: red;'>Image to small to be downsized!</p></div>";
+            return false;
+        }
+        return $this->make_thumb($source, $source, $new_w, $quality);
     }
 }

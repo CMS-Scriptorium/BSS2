@@ -377,33 +377,31 @@ for ($i = 0; $i < $num_images; $i++) {
 		change_mode($new_file);
 
 		// Check if we need to create a thumb
-		if ($resize != 0) {
-		
-			// Thumbnail destination
-			$thumb_destination = WB_PATH.MEDIA_DIRECTORY.'/'.$img_dir.'/thumbs/item'.$item_id.'/'.$filename.'.'.$fileext;
-			
-			// Check thumbnail type
-			if ($fileext == 'png') {
-				make_thumb_png($new_file, $thumb_destination, $resize);
-			} else {
-				make_thumb($new_file, $thumb_destination, $resize);
-			}
-			change_mode($thumb_destination);
-		}
+        $oBAKERY_IMG = bakery\core\Image::getInstance();
+		if ($resize != 0)
+        {
+            // Thumbnail destination
+            $thumb_destination = WB_PATH . MEDIA_DIRECTORY . '/' . $img_dir . '/thumbs/item' . $item_id . '/' . $filename . '.' . $fileext;
 
+            $oBAKERY_IMG->make_thumb($new_file, $thumb_destination, $resize);
+            change_mode($thumb_destination);
+        }
 
-		// Check if we need to resize the image
+        // Check if we need to resize the image
 		if ($imgresize == 'yes' && file_exists($new_file)) {
 
 			// Image destination
 			$img_destination = WB_PATH.MEDIA_DIRECTORY.'/'.$img_dir.'/images/item'.$item_id.'/'.$filename.'.'.$fileext;
 
+            /**
 			// Check image type
 			if ($fileext == 'png') {
 				resizePNG($new_file, $img_destination, $maxwidth, $maxheight);
 			} else {
 				resizeJPEG($new_file, $maxwidth, $maxheight, $quality);
 			}
+            **/
+            $oBAKERY_IMG->resize($new_file, $maxwidth, $maxheight, $quality);
 			change_mode($img_destination);
 		}
 
